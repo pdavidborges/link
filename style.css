@@ -1,0 +1,135 @@
+/* CSS externo */
+/*
+seletor{
+    propriedade:valor;           
+}
+*/
+
+:root{
+    --primary: #2F2B8C;
+    --primary-dark: #1b1e59;
+    --primary-light: #8979F3;
+    --gray: #666666;
+    --gray-light: #F2DFE2;    
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary); /*cor de fundo*/
+    /*background-image: url(bg.jpg) ;*/
+}
+
+div{    
+    background-color: var(--gray-light);
+    
+    width: 60%; /*largura inicial*/
+    max-width: 340px; /*largura máxima (340 + 60 de padding)*/
+    margin-top: 100px; /*provisório*/
+
+    margin-left: auto;
+    margin-right: auto; 
+
+    padding: 30px; /*espaçamento interno*/
+    text-align: center;
+    border-radius: 10px;
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--primary);
+    
+    /*border-width: 5px;
+    border-style: solid;
+    border-color: #2F2B8C;*/
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+h1{
+    color: var(--primary-dark); /*cor da fonte*/
+    font-size: 32px;           
+}
+
+h2{
+    color: var(--primary-light);
+    font-size: 20px;
+}
+
+p{
+    /*font-size: 16px;
+    font-weight: 400;*/
+    color: var(--gray);
+}
+
+ul{
+    /*background-color: red;*/
+    list-style-type: none;
+    padding: 0;
+}
+
+li{    
+    margin-bottom: 5px;
+}
+
+/*Links que estão DENTRO de um <li>*/
+li a{
+    color: #ffffff;
+    background-color: var(--primary);
+    text-decoration: none;
+    display: block;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+
+/*ao passar o mouse*/
+li a:hover{
+    background-color: var(--primary-dark);
+}
+
+/*ao clicar*/
+li a:active{
+    background-color: var(--primary-light);
+}
+
+/*formatando o id copyright*/
+#copyright{
+    color: var(--primary);
+}
+
+/*MEDIA QUERY*/
+
+/*para telas de 1280 pra cima*/
+@media (min-width: 1280px){
+
+    #link-app{
+        display: none;
+    }
+
+}
+
+
+/*para telas de até 414px*/
+@media (max-width: 414px){
+
+    div{
+        margin-top: 50px;
+    }
+
+    img{
+        width: 80px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+}
